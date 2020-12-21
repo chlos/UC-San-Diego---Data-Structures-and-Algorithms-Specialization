@@ -54,7 +54,7 @@ def test():
     jobs = [1, 2, 3, 4, 5]
     print(f'test: {n_workers} {jobs}')
     assigned_jobs_naive = assign_jobs_naive(n_workers, jobs)
-    assigned_jobs= assign_jobs(n_workers, jobs)
+    assigned_jobs = assign_jobs(n_workers, jobs)
     print(f'naive: {assigned_jobs_naive}')
     print(f'heapq: {assigned_jobs}')
     assert assigned_jobs == assigned_jobs_naive
